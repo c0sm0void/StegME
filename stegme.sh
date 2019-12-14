@@ -26,9 +26,9 @@ case $n in
   ;;
   n)
   esac
-  SPATH="/root/Desktop/RCC/ITR/steg.txt"
+  SPATH="/root/Desktop/RCC/StegME/steg.txt"
 	export SPATH
-  SMI="/root/Desktop/RCC/ITR/smi.jpg"
+  SMI="/root/Desktop/RCC/StegME/smi.jpg"
 	export SMI
   python3 textINimage.py enc $SMI $SPATH
   ;;
