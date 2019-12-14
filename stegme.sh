@@ -30,16 +30,16 @@ case $n in
 	export SPATH
   SMI="/root/Desktop/RCC/ITR/smi.jpg"
 	export SMI
-  python3 steg.py enc $SMI $SPATH
+  python3 textINimage.py enc $SMI $SPATH
   ;;
   2) echo "decoding...."
-  python3 steg.py dec encoded.png
+  python3 textINimage.py dec encoded.png
   ;;
   3) echo "image in image"
-  python steganography.py merge --img1=res/img1.jpg --img2=res/img2.jpg --output=res/output.png
+  python imageINimage.py merge --img1=res/img1.jpg --img2=res/img2.jpg --output=res/output.png
   ;;
   4) echo "image from image"
-  python steganography.py unmerge --img=res/output.png --output=res/output2.png
+  python imageINimage.py unmerge --img=res/output.png --output=res/output2.png
   ;;
   0) echo "Have a good day!!"
   break;;
